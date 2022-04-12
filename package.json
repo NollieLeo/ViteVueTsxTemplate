@@ -14,7 +14,8 @@
     "ant-design-vue": "^3.1.1",
     "axios": "^0.26.1",
     "lodash": "^4.17.21",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.181",
@@ -35,7 +36,16 @@
     "vite": "^2.9.0",
     "vue-tsc": "^0.29.8"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{ts,tsx,vue,js,jsx}": "eslint --cache --fix"
+    "*.{js,jsx,vue,ts,tsx}": [
+      "yarn lint",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
