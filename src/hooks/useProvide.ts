@@ -10,7 +10,7 @@ import { provide, readonly, ref, isReactive } from "vue";
 import forEach from "lodash/forEach";
 
 const useProvide = (shouldReactive: Boolean) => {
-  const handleProvide = (providers: Record<string, any>) => {
+  const handleProvide = (providers: Record<string, any>): void => {
     forEach(providers, (value, key) => {
       const tempValue =
         shouldReactive && !isReactive(value) ? ref(value) : value;

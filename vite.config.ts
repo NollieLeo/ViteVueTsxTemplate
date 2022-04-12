@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-09 14:59:27
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-12 16:23:19
+ * @LastEditTime: 2022-04-12 16:40:55
  * @FilePath: /vue3-vite-test/vite.config.ts
  * @Description:
  */
@@ -16,6 +16,13 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": "/src/",
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/style/index.scss";',
+      },
     },
   },
 });
