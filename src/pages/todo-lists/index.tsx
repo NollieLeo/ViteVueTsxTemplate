@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-09 16:51:50
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-12 17:31:36
+ * @LastEditTime: 2022-04-13 15:34:20
  * @FilePath: /vue3-vite-test/src/pages/todo-lists/index.tsx
  * @Description: todolists
  */
@@ -15,10 +15,8 @@ const TodoList = defineComponent({
     const inputValue = ref<string>("");
     const mappings = ref<Array<string>>([]);
     const prefixCls = "todo-lists" as const;
-
-    const provider = useProvide(true);
-
     const inputRef = ref(null);
+    const provider = useProvide(true);
 
     /**
      * @description:

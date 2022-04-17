@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-12 17:57:12
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-12 21:19:39
+ * @LastEditTime: 2022-04-12 21:21:46
  * @FilePath: /vue3-vite-test/src/utils/https/index.ts
  * @Description: axios的统一封装
  */
@@ -87,4 +87,4 @@ const http: HttpInterface = {
   download: saveAs,
 };
 
-export { http };
+export default http;
