@@ -1,0 +1,14 @@
+.demo-wrapper {
+  padding: 15px 20px;
+  border-radius: 4px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #cbcbcb;
+  &-title {
+    font-size: 25px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+}
