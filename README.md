@@ -12,11 +12,12 @@ yarn dev (npx vite)
 
 - [x] vue3 + jsx
 - [x] typescript
-- [x] eslint
+- [x] eslint + prettier
 - [x] vite
 - [x] scss
 - [x] ant-design-vue
-- [x] axios
+- [x] axios 请求库（后续打算替换成VueRequest）
+- [x] Pinia 全局store
 - [ ] postcss
 - [ ] stylelint
 - [ ] conventional-changelog
