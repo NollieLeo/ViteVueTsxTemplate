@@ -18,6 +18,7 @@ yarn dev (npx vite)
 - [x] ant-design-vue
 - [x] axios 请求库（后续打算替换成VueRequest）
 - [x] Pinia 全局store
+- [x] Vue Router v4
 - [ ] postcss
 - [ ] stylelint
 - [ ] conventional-changelog
