@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-09 16:51:50
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-17 17:25:33
+ * @LastEditTime: 2022-04-19 00:59:11
  * @FilePath: /vue3-vite-test/src/pages/demos/components/todo-lists/index.tsx
  * @Description: todolists
  */
@@ -53,12 +53,7 @@ const TodoList = defineComponent({
     });
 
     return () => (
-      <DemoWrapper
-        class={prefixCls}
-        v-slots={{
-          title: renderTitle,
-        }}
-      >
+      <DemoWrapper class={prefixCls} title="TodoList">
         <HelloWorld />
         <div class={`${prefixCls}-header`}>
           <div>{inputValue.value}</div>

@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-09 14:59:27
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-12 16:14:20
+ * @LastEditTime: 2022-04-19 00:16:42
  * @FilePath: /vue3-vite-test/src/components/HelloWorld.tsx
  * @Description:
  */
@@ -25,7 +25,7 @@ const Helloworld = defineComponent({
     },
   },
   setup() {
-    let timer = 0;
+    let timer;
     const currentDate = ref(new Date());
 
     const mappings: any = inject("test");

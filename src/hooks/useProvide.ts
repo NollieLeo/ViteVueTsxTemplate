@@ -2,11 +2,11 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-10 16:11:32
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-16 16:12:02
+ * @LastEditTime: 2022-04-18 22:53:39
  * @FilePath: /vue3-vite-test/src/hooks/useProvide.ts
  * @Description: provide （observerable provide）
  */
-import { provide, readonly, reactive, ref, isReactive } from "vue";
+import { provide, readonly, ref, isReactive } from "vue";
 import forEach from "lodash/forEach";
 
 const useProvide = (shouldReactive: Boolean = true) => {

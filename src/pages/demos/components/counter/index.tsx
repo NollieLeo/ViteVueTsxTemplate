@@ -2,7 +2,7 @@
  * @Author: 翁恺敏
  * @Date: 2022-04-17 16:16:10
  * @LastEditors: 翁恺敏
- * @LastEditTime: 2022-04-17 17:31:26
+ * @LastEditTime: 2022-04-19 00:58:45
  * @FilePath: /vue3-vite-test/src/pages/demos/components/Counter/index.tsx
  * @Description: 定时器demo
  */
@@ -25,11 +25,7 @@ const Counter = defineComponent({
     });
 
     return () => (
-      <DemoWrapper
-        v-slots={{
-          title: () => "定时器测试",
-        }}
-      >
+      <DemoWrapper title="定时器测试">
         <span>num: {counter.value}</span>
         <Button onClick={trigger}>开启定时器</Button>
         <Button onClick={clear}>清除定时器</Button>
